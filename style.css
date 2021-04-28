@@ -154,6 +154,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 /*CSS for the Carousel*/
 body {
   margin: 0;
@@ -187,15 +197,16 @@ body {
   display: flex;
 }
 
-span {
-  margin: auto;
-  font-size: 2rem;
+a > span {
+  margin-top: auto;
+  font-size: 3rem;
 }
 
 
 .carousel__face:nth-child(1) {
-  background-color: white;
-  /* background-image: url(""); */
+  background-image: url("NixonProject.png");
+  opacity: .95;
+  background-position: center;
   transform: rotateY(  0deg) translateZ(220px); }
 .carousel__face:nth-child(2) { 
   background-image: url("https://images.pexels.com/photos/1258865/pexels-photo-1258865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
