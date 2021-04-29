@@ -4,11 +4,51 @@ body{
     background-color: black;
     
 }
+div > span{
+    display: flex;
+    justify-content: flex-end;
+}
+
 #Project{
-    font-size: 2rem;
-    position: absolute;
+    font-size: 1.5rem;
     text-align: center;
-    top: 1rem;
+    top: 5rem;
     color: white;
     background-repeat: no-repeat;
+}
+
+.visit{
+    background-color: rgb(255, 255, 255); /* Green */
+    border: none;
+    border-radius: 6px;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.visit:hover{
+    box-shadow: -10px 2px 25px 4px rgba(240, 228, 190, 0.24), 10px 2px 25px 4px rgba(240, 228, 190, 0.24);
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+
+.projectDescription{
+    height:100px;
+    width: 43.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    overflow:auto;
+    background-color:rgb(0, 0, 0);
+    color:white;
+    scrollbar-base-color:rgb(160, 31, 8);
+    font-family:sans-serif;
+    padding:10px;
 }
