@@ -156,12 +156,95 @@
   background-color: rgb(255, 255, 255);
 }
 
+
+
+
+
+/*ABOUT PAGE CSS and animation*/
 #about{
   height: 100vh;
   width: 100vw;
   background-color: black;
   color: white;
 }
+
+#rocket{
+  width: 200px;
+  height: 100px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  
+	0% {
+		transform: scale(1) translateY(40vh) translateX(-10vw) rotate(-10deg);
+  }
+  
+	
+  
+	10% {
+		transform: translateY(27vh) translateX(10vw) scale(1) rotate(-10deg);
+  }
+  
+  
+	
+	20% {
+		transform: translateY(20vh) translateX(30vw) scale(1) rotate(-5deg);
+  }
+  
+  
+	
+	30% {
+		transform: translateY(15vh) translateX(50vw) scale(1);
+  }
+
+  
+	
+	40% {
+		transform: translateY(10vh) translateX(70vw) scale(1);
+  }
+  
+  
+	50% {
+		transform: translateY(5vh) translateX(90vw) scale(1);
+  }
+
+  
+	60% {
+		transform: translateY(4vh) translateX(110vw) scale(1);
+  }
+
+  
+
+  70% {
+		transform: translateY(4vh) translateX(110vw) scale(1);
+  }
+
+  
+  
+  80% {
+		transform: translateY(4vh) translateX(110vw) scale(1);
+	}
+  
+  
+  
+  90% {
+		transform: translateY(4vh) translateX(110vw) scale(1);
+  }
+  
+  
+
+	100% {
+		transform: translateY(2vh) translateX(110vw) scale(1);
+	}
+	
+}
+
+
+
 
 #contact{
   height: 100vh;
