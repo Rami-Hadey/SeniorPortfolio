@@ -1,3 +1,13 @@
+/*FONT*/
+@font-face{
+  font-family: mainFont;
+  src:url(cannu-font/CannuRegular-axgPE.ttf);  
+}
+@font-face{
+  font-family: nameFont;
+  src:url(alphabet-font/Alphanet-eZ13x.otf);  
+}
+
 
 /*Nav bar animation*/
 /* The Overlay (background) */
@@ -143,11 +153,22 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 70%;
+  font-family: mainFont;
 
 }
+#animated-example h1{
+  font-size: 7rem;
+  transform: translateY(-30%);
+  line-height: 120%;
+}
+
+
+
 #landing .col{
   margin-left: auto;
 }
+
+
 
 
 #portfolio{
@@ -162,11 +183,28 @@
 
 /*ABOUT PAGE CSS and animation*/
 #about{
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   background-color: black;
   color: white;
+  background: url("laptop.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: mainFont;
+
+
 }
+#about > h1{
+  margin-top: 21.4px;
+  font-size: 20rem;
+  line-height: 90%;
+}
+ /* #about div > p{
+  font-size: 30em;
+} */
+
+
 
 #rocket{
   width: 200px;
@@ -177,7 +215,7 @@
   animation-iteration-count: infinite;
 }
 
-@keyframes example {
+/* @keyframes example {
   
 	0% {
 		transform: scale(1) translateY(40vh) translateX(-10vw) rotate(-10deg);
@@ -214,7 +252,7 @@
 
   
 	60% {
-		transform: translateY(4vh) translateX(110vw) scale(1);
+		transform: translateY(4vh) translateX(100vw) scale(1);
   }
 
   
@@ -241,7 +279,90 @@
 		transform: translateY(2vh) translateX(110vw) scale(1);
 	}
 	
+} */
+
+
+@keyframes example {
+  
+	0% {
+		transform: scale(1) translateY(40vh) translateX(-10vw) rotate(-10deg);
+  }
+  
+	
+  
+	10% {
+		transform: translateY(27vh) translateX(10vw) scale(1) rotate(-10deg);
+  }
+  
+  
+	
+	20% {
+		transform: translateY(20vh) translateX(25vw) scale(1) rotate(-5deg);
+  }
+  
+  
+	
+	30% {
+		transform: translateY(15vh) translateX(35vw) scale(1) rotate(-5deg);
+  }
+
+  
+	
+	40% {
+		transform: translateY(10vh) translateX(45vw) scale(1);
+  }
+  
+  
+	50% {
+		transform: translateY(5vh) translateX(55vw) scale(1);
+  }
+
+  
+	60% {
+		transform: translateY(4vh) translateX(75vw) scale(1);
+  }
+
+  
+
+  70% {
+		transform: translateY(4vh) translateX(90vw) scale(1);
+  }
+
+  
+  
+  80% {
+		transform: translateY(4vh) translateX(100vw) scale(1);
+	}
+  
+  
+  
+  90% {
+		transform: translateY(4vh) translateX(100vw) scale(1);
+  }
+  
+  
+
+	100% {
+		transform: translateY(2vh) translateX(100vw) scale(1);
+	}
+	
 }
+
+
+
+#aboutinfo{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+}
+#aboutinfo > h1{
+  margin-top: 0px;
+}
+
+
+
+
+
 
 
 
@@ -249,7 +370,8 @@
 #contact{
   height: 100vh;
   width: 100vw;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 
 
@@ -340,3 +462,10 @@ a > span {
     transform: rotateY(-360deg);
   }
 }
+
+
+
+
+
+
+
