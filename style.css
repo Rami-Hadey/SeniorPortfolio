@@ -7,6 +7,10 @@
   font-family: nameFont;
   src:url(alphabet-font/Alphanet-eZ13x.otf);  
 }
+@font-face{
+  font-family: atomicFont;
+  src:url(a-atomic-md-font/AtomicMd-3zXDZ.ttf);  
+}
 
 
 /*Nav bar animation*/
@@ -153,12 +157,12 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 70%;
-  font-family: mainFont;
+  font-family: atomicFont;
 
 }
 #animated-example h1{
-  font-size: 7rem;
-  transform: translateY(-30%);
+  font-size: 5rem;
+  transform: translateY(-10%);
   line-height: 120%;
 }
 
@@ -168,6 +172,25 @@
   margin-left: auto;
 }
 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#str {
+  position: relative;
+  width: 600px;
+  padding: 20px;
+  font-size: 30px;
+  height: auto;
+  font-family: sans-serif;
+  color: #fff;
+  font-weight: bold;
+  background: rgb(129, 129, 129);
+
+}
 
 
 
@@ -197,7 +220,7 @@
 }
 #about > h1{
   margin-top: 21.4px;
-  font-size: 20rem;
+  font-size: 20vw;
   line-height: 90%;
 }
  /* #about div > p{
@@ -215,71 +238,6 @@
   animation-iteration-count: infinite;
 }
 
-/* @keyframes example {
-  
-	0% {
-		transform: scale(1) translateY(40vh) translateX(-10vw) rotate(-10deg);
-  }
-  
-	
-  
-	10% {
-		transform: translateY(27vh) translateX(10vw) scale(1) rotate(-10deg);
-  }
-  
-  
-	
-	20% {
-		transform: translateY(20vh) translateX(30vw) scale(1) rotate(-5deg);
-  }
-  
-  
-	
-	30% {
-		transform: translateY(15vh) translateX(50vw) scale(1);
-  }
-
-  
-	
-	40% {
-		transform: translateY(10vh) translateX(70vw) scale(1);
-  }
-  
-  
-	50% {
-		transform: translateY(5vh) translateX(90vw) scale(1);
-  }
-
-  
-	60% {
-		transform: translateY(4vh) translateX(100vw) scale(1);
-  }
-
-  
-
-  70% {
-		transform: translateY(4vh) translateX(110vw) scale(1);
-  }
-
-  
-  
-  80% {
-		transform: translateY(4vh) translateX(110vw) scale(1);
-	}
-  
-  
-  
-  90% {
-		transform: translateY(4vh) translateX(110vw) scale(1);
-  }
-  
-  
-
-	100% {
-		transform: translateY(2vh) translateX(110vw) scale(1);
-	}
-	
-} */
 
 
 @keyframes example {
@@ -325,25 +283,25 @@
   
 
   70% {
-		transform: translateY(4vh) translateX(90vw) scale(1);
+		transform: translateY(4vh) translateX(90vw) scale(0);
   }
 
   
   
   80% {
-		transform: translateY(4vh) translateX(100vw) scale(1);
+    transform: translateY(4vh) translateX(90vw) scale(0);
 	}
   
   
   
   90% {
-		transform: translateY(4vh) translateX(100vw) scale(1);
+		transform: translateY(4vh) translateX(90vw) scale(0);
   }
   
   
 
 	100% {
-		transform: translateY(2vh) translateX(100vw) scale(1);
+		transform: translateY(2vh) translateX(90vw) scale(0);
 	}
 	
 }
@@ -356,7 +314,13 @@
   background-color: rgb(255, 255, 255);
 }
 #aboutinfo > h1{
+  text-align: center;
+  border-style: none solid solid solid;
   margin-top: 0px;
+  width: 84%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(209, 209, 209, 0.897);
 }
 
 
@@ -416,12 +380,15 @@ body {
   height: 100%;
   transform-style: preserve-3d; 
   animation: rotate360 20s infinite forwards linear;
+  margin-top: 20%;
+  margin-bottom: 20%;
+
 }
 .carousel__face { 
   position: absolute;
-  width: 300px;
-  height: 187px;
-  top: 20px;
+  width: 350px;
+  height: 227px;
+  /* top: 20px; */
   left: 10px;
   right: 10px;
   background-size: cover;
@@ -439,19 +406,19 @@ a > span {
   background-image: url("NixonProject.png");
   opacity: .95;
   background-position: center;
-  transform: rotateY(  0deg) translateZ(220px); }
+  transform: rotateY(  0deg) translateZ(280px); }
 .carousel__face:nth-child(2) { 
   background-image: url("https://images.pexels.com/photos/1258865/pexels-photo-1258865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    transform: rotateY( 72deg) translateZ(220px); }
+    transform: rotateY( 72deg) translateZ(280px); }
 .carousel__face:nth-child(3) {
   background-image: url("https://images.pexels.com/photos/808466/pexels-photo-808466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  transform: rotateY( 144deg) translateZ(220px); }
+  transform: rotateY( 144deg) translateZ(280px); }
 .carousel__face:nth-child(4) {
   background-image: url("https://images.pexels.com/photos/1394841/pexels-photo-1394841.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  transform: rotateY(216deg) translateZ(220px); }
+  transform: rotateY(216deg) translateZ(280px); }
 .carousel__face:nth-child(5) {
   background-image: url("");
-  transform: rotateY(288deg) translateZ(220px); }
+  transform: rotateY(288deg) translateZ(280px); }
 
 
 @keyframes rotate360 {
@@ -462,6 +429,87 @@ a > span {
     transform: rotateY(-360deg);
   }
 }
+
+
+
+
+
+/*The Carousel for the contact page*/
+.container2 {
+  position: relative;
+  width: 320px;
+  height: 50%;
+  margin: 100px auto 100px auto;
+  perspective: 1000px;
+}
+
+.carousel2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 10s infinite forwards linear;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+.carousel__face2 { 
+  position: relative;
+  width: 250px;
+  height: 127px;
+  /* top: 20px; */
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+  display: flex;
+}
+
+a > span {
+  margin-top: auto;
+  font-size: 3rem;
+}
+
+
+.carousel__face2:nth-child(1) {
+  background-image: url("githublogo.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  opacity: .95;
+  background-position: center;
+  transform: rotateY(  0deg) translateZ(80px); }
+.carousel__face2:nth-child(2) { 
+  background-image: url("linkedin.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  opacity: .95;
+  background-position: center;
+  transform: rotateY( 72deg) translateZ(80px); }
+.carousel__face2:nth-child(3) {
+  background-image: url("instagram.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  opacity: .95;
+  background-position: center;
+  transform: rotateY( 144deg) translateZ(80px); }
+.carousel__face2:nth-child(4) {
+  background-image: url("gmail.png");
+  
+  transform: rotateY(216deg) translateZ(80px); }
+.carousel__face2:nth-child(5) {
+  background-image: url("");
+  transform: rotateY(288deg) translateZ(80px); }
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
 
 
 
