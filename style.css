@@ -63,7 +63,7 @@
   
   span{
     float: right;
-    font-size: 45px;
+    font-size: 5em;
     color: #C4C4C4;
   }
   
@@ -180,10 +180,10 @@
 }
 
 #str {
-  position: relative;
-  width: 600px;
-  padding: 20px;
-  font-size: 30px;
+  position: absolute;
+  width: 40vw;
+  padding: 1vw;
+  font-size: 2vw;
   height: auto;
   font-family: sans-serif;
   color: #fff;
@@ -216,10 +216,9 @@
   background-size: cover;
   font-family: mainFont;
 
-
 }
 #about > h1{
-  margin-top: 21.4px;
+  margin-top: 0px;
   font-size: 20vw;
   line-height: 90%;
 }
@@ -230,8 +229,8 @@
 
 
 #rocket{
-  width: 200px;
-  height: 100px;
+  width: 20vw;
+  height: 10vh;
   position: relative;
   animation-name: example;
   animation-duration: 4s;
@@ -315,12 +314,13 @@
 }
 #aboutinfo > h1{
   text-align: center;
-  border-style: none solid solid solid;
-  margin-top: 0px;
-  width: 84%;
+  border-style: solid solid solid solid;
+  margin-top: 0%;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(209, 209, 209, 0.897);
+  transform: translateY(50%);
+  background-color: rgba(209, 209, 209, 0.67);
 }
 
 
@@ -336,6 +336,10 @@
   width: 100vw;
   background-color: rgb(0, 0, 0);
   color: white;
+}
+
+#contact h1{
+  margin-bottom: 1%;
 }
 
 
@@ -369,8 +373,8 @@ body {
 }
 .container {
   position: relative;
-  width: 320px;
-  margin: 100px auto 0 auto;
+  width: 30vw;
+  margin: 5% auto 0 auto;
   perspective: 1000px;
 }
 
@@ -386,8 +390,8 @@ body {
 }
 .carousel__face { 
   position: absolute;
-  width: 350px;
-  height: 227px;
+  width: 25vw;
+  height: 31vh;
   /* top: 20px; */
   left: 10px;
   right: 10px;
@@ -398,7 +402,7 @@ body {
 
 a > span {
   margin-top: auto;
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 
@@ -406,19 +410,19 @@ a > span {
   background-image: url("NixonProject.png");
   opacity: .95;
   background-position: center;
-  transform: rotateY(  0deg) translateZ(280px); }
+  transform: rotateY(  0deg) translateZ(20vw); }
 .carousel__face:nth-child(2) { 
   background-image: url("https://images.pexels.com/photos/1258865/pexels-photo-1258865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    transform: rotateY( 72deg) translateZ(280px); }
+    transform: rotateY( 72deg) translateZ(20vw); }
 .carousel__face:nth-child(3) {
   background-image: url("https://images.pexels.com/photos/808466/pexels-photo-808466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  transform: rotateY( 144deg) translateZ(280px); }
+  transform: rotateY( 144deg) translateZ(20vw); }
 .carousel__face:nth-child(4) {
   background-image: url("https://images.pexels.com/photos/1394841/pexels-photo-1394841.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  transform: rotateY(216deg) translateZ(280px); }
+  transform: rotateY(216deg) translateZ(20vw); }
 .carousel__face:nth-child(5) {
   background-image: url("");
-  transform: rotateY(288deg) translateZ(280px); }
+  transform: rotateY(288deg) translateZ(20vw); }
 
 
 @keyframes rotate360 {
@@ -437,9 +441,12 @@ a > span {
 /*The Carousel for the contact page*/
 .container2 {
   position: relative;
-  width: 320px;
+  width: 20%;
   height: 50%;
-  margin: 100px auto 100px auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
   perspective: 1000px;
 }
 
@@ -455,11 +462,11 @@ a > span {
 }
 .carousel__face2 { 
   position: relative;
-  width: 250px;
-  height: 127px;
+  /* width: 250px; */
+  height:20vh;
   /* top: 20px; */
-  left: 10px;
-  right: 10px;
+  left: auto;
+  right: auto;
   background-size: cover;
   box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
   display: flex;
@@ -484,22 +491,18 @@ a > span {
   background-repeat: no-repeat;
   opacity: .95;
   background-position: center;
-  transform: rotateY( 72deg) translateZ(80px); }
+  transform: rotateY( 130deg) translateZ(80px); }
 .carousel__face2:nth-child(3) {
   background-image: url("instagram.png");
   background-size: 60%;
   background-repeat: no-repeat;
   opacity: .95;
   background-position: center;
-  transform: rotateY( 144deg) translateZ(80px); }
+  transform: rotateY( 220deg) translateZ(80px); }
 .carousel__face2:nth-child(4) {
   background-image: url("gmail.png");
   
-  transform: rotateY(216deg) translateZ(80px); }
-.carousel__face2:nth-child(5) {
-  background-image: url("");
-  transform: rotateY(288deg) translateZ(80px); }
-
+  transform: rotateY(310deg) translateZ(80px); }
 
 @keyframes rotate360 {
   from {
