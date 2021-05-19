@@ -86,17 +86,19 @@
 
   /*Fade in landing page*/
   .animated {
-    font-size: 5.4rem;
+    font-size: 5.4em;
     position: absolute;
-    left: 16.5rem;
-    top: 5rem;
+    left: 18vw;
+    top: 5.5vw;
     opacity: 0;
     animation-name: topFadeOut;
     animation-duration: 5s;
     color: white;
     background-repeat: no-repeat;
-    padding-top:95px;
-    margin-bottom:60px;
+    padding-top:6.5vw;
+    margin-bottom:60vw;
+    margin-left: auto;
+    margin-right: auto;
     -webkit-animation-duration: 10s;
     animation-duration: 10s;
     -webkit-animation-fill-mode: both;
@@ -106,15 +108,17 @@
  .animated2 {
   font-size: 3rem;
   position: absolute;
-  left: 50.5rem;
-  top: 3rem;
+  left: 56.5vw;
+  top: 4vw;
   opacity: 0;
   animation-name: topFadeOut;
   animation-duration: 5s;
   color: white;
   background-repeat: no-repeat;
-  padding-top:95px;
-  margin-bottom:60px;
+  padding-top:6.5vw;
+  margin-bottom:60vw;
+  margin-left: auto;
+  margin-right: auto;
   -webkit-animation-duration: 10s;
   animation-duration: 10s;
   -webkit-animation-fill-mode: both;
@@ -235,6 +239,7 @@
   animation-name: example;
   animation-duration: 4s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 
@@ -313,16 +318,41 @@
   background-color: rgb(255, 255, 255);
 }
 #aboutinfo > h1{
+  font-size: 2.5vw;
+  color: rgb(82, 98, 247);
   text-align: center;
+  padding: 6vw;
+  
   border-style: solid solid solid solid;
+  border-color: rgb(136, 136, 136);
   margin-top: 0%;
-  width: 65%;
+  width: 70vw;
+  border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
-  transform: translateY(50%);
-  background-color: rgba(209, 209, 209, 0.67);
+  transform: translateY(8vw);
+  background-image: url("stars.jpeg");
+  opacity: .85;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* animation-delay: 0.2s; */
 }
 
+
+#aboutinfo > h1:hover{
+  animation: spinnyshadows 2s infinite linear;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes spinnyshadows{
+    0% { box-shadow: 15px 0 15px rgb(82, 98, 247); }
+    25% { box-shadow: 0px 15px 15px rgb(82, 98, 247); }
+    50% { box-shadow: -15px 0px 15px rgb(82, 98, 247); }
+    75% { box-shadow: 0px -15px 15px rgb(82, 98, 247); }
+    100% { box-shadow: 15px 0px 15px rgb(82, 98, 247); }
+}
 
 
 
@@ -479,29 +509,32 @@ a > span {
 
 
 .carousel__face2:nth-child(1) {
-  background-image: url("githublogo.png");
-  background-size: 60%;
+  background-image: url("/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus.png");
+  background-size: 50%;
   background-repeat: no-repeat;
   opacity: .95;
   background-position: center;
   transform: rotateY(  0deg) translateZ(80px); }
 .carousel__face2:nth-child(2) { 
   background-image: url("linkedin.png");
-  background-size: 60%;
+  background-size: 50%;
   background-repeat: no-repeat;
   opacity: .95;
   background-position: center;
   transform: rotateY( 130deg) translateZ(80px); }
 .carousel__face2:nth-child(3) {
   background-image: url("instagram.png");
-  background-size: 60%;
+  background-size: 50%;
   background-repeat: no-repeat;
   opacity: .95;
   background-position: center;
   transform: rotateY( 220deg) translateZ(80px); }
 .carousel__face2:nth-child(4) {
   background-image: url("gmail.png");
-  
+  background-size: 50%;
+  background-repeat: no-repeat;
+  opacity: .95;
+  background-position: center;
   transform: rotateY(310deg) translateZ(80px); }
 
 @keyframes rotate360 {
