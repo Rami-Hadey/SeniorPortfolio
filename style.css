@@ -193,6 +193,21 @@
   color: #fff;
   font-weight: bold;
   background: rgb(129, 129, 129);
+}
+#str2 {
+  display: none;
+  position: absolute;
+  text-align: center;
+  top: 140vw;
+  left: -42vw;
+  width: 70vw;
+  padding: 1vw;
+  font-size: 5vw;
+  height: auto;
+  font-family: sans-serif;
+  color: #fff;
+  font-weight: bold;
+  background: rgb(129, 129, 129);
 
 }
 
@@ -443,7 +458,9 @@ a > span {
   transform: rotateY(  0deg) translateZ(20vw); }
 .carousel__face:nth-child(2) { 
   background-image: url("Bonafide.png");
-    transform: rotateY( 72deg) translateZ(20vw); }
+  opacity: .95;
+  background-position: center;
+  transform: rotateY( 72deg) translateZ(20vw); }
 .carousel__face:nth-child(3) {
   background-image: url("https://images.pexels.com/photos/808466/pexels-photo-808466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   transform: rotateY( 144deg) translateZ(20vw); }
@@ -548,6 +565,72 @@ a > span {
 
 
 
+
+/*MOBILE TIME*/
+@media only screen and (max-width: 480px){
+  body{
+    width: 100%;
+  }
+  #landing h1{
+    font-size: 4rem;
+    margin-top: 55vw;
+    text-align: center;
+    
+  }
+  #str{
+    font-size: .5em;
+    display: none;
+  }
+  #str2{
+    display: block;
+  }
+  #landing{
+    background-size: 200%;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  #about{
+    height: 120vw;
+    background-size: 320%;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .carousel__face{
+    margin-top: 30vh;
+    width: 40vw;
+    height: 21vh;
+  }
+  a > span {
+
+    font-size: 1.5em;
+  }
+  .carousel__face:nth-child(1) {
+    background-image: url("NixonProject.png");
+    opacity: .95;
+    background-position: center;
+    transform: rotateY(  0deg) translateZ(30vw); }
+  .carousel__face:nth-child(2) { 
+    background-image: url("Bonafide.png");
+    opacity: .95;
+    background-position: center;
+    transform: rotateY( 72deg) translateZ(30vw); }
+  .carousel__face:nth-child(3) {
+    background-image: url("https://images.pexels.com/photos/808466/pexels-photo-808466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    transform: rotateY( 144deg) translateZ(30vw); }
+  .carousel__face:nth-child(4) {
+    background-image: url("https://images.pexels.com/photos/1394841/pexels-photo-1394841.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    transform: rotateY(216deg) translateZ(30vw); }
+  .carousel__face:nth-child(5) {
+    background-image: url("");
+    transform: rotateY(288deg) translateZ(30vw); }
+    #aboutinfo > h1{
+      font-size: 2em;
+      width: 90vw;
+    }
+    div.overlay-content img{
+      width: 30%;
+    }
+}
 
 
 
