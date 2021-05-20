@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="projects.css" rel="stylesheet">
+    <script src="animation.js"></script>
+</head>
+<body id="projects">
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <img src="RH.jpg">
+          <a href="/index.html#landing" onclick="closeNav()">Landing Page</a>
+          <a href="/index.html#portfolio" onclick="closeNav()">Portfolio</a>
+          <a href="/index.html#about" onclick="closeNav()">About Me</a>
+          <a href="/index.html#contact" onclick="closeNav()">Contact</a>
+        </div>
+      
+    </div>
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <div><span onclick="openNav()">&#9776;</span></div>
+    
+
+    <div class="row" id="Project">
+        <h1>Bonafide Wear</h1>
+        <div><img src="Bonafide.png" width="700px"></div>
+        <a class="visit" href="/Bonafide-main/index.html">Visit the Site</a>
+        <div class="projectDescription">For my coding class I was tasked to make a mock voting site that simulates a voting booth but with one exception, it allows Nixon to win each time, the assignment was used to test my knowledge of event listeners and handlers within javascript.</div>
+    </div>
+    
+
+</body>
+</html>

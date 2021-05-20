@@ -1,0 +1,20 @@
+h2{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 160px;
+}
+
+/*Dropdown menu*/
+
+section > div.row{
+  border: 1px rgb(73, 73, 73) solid;
+}
+
+
+/*Pictures*/
+
+#products{
+  margin-top: 20px;
+}
+
+
